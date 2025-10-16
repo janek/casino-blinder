@@ -1,0 +1,12 @@
+App(
+    appid="casino_blinder",
+    name="Casino Blinder",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="casino_blinder_app",
+    stack_size=2 * 1024,
+    fap_category="GPIO",
+    fap_icon="casino_blinder.png",
+    fap_author="janek",
+    fap_version="1.0",
+    fap_description="SubGHz signal transmitter with animations",
+)

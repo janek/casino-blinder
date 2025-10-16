@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude-code auth whoami)",
+      "Bash(claude auth whoami)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:instantiator.dev)",
+      "Bash(git init:*)",
+      "Bash(gh repo create:*)",
+      "Read(//Users/janek/**)",
+      "Bash(set -e GITHUB_TOKEN)",
+      "Bash(echo $GITHUB_TOKEN)",
+      "Bash(fish -c \"set -e -U GITHUB_TOKEN\")",
+      "Bash(convert:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "outputStyle": "Learning"
+}
