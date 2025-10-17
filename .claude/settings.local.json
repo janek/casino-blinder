@@ -18,7 +18,8 @@
       "Bash(git push:*)",
       "Bash(ufbt launch:*)",
       "Bash(ufbt)",
-      "Bash(make list-subghz:*)"
+      "Bash(make list-subghz:*)",
+      "WebFetch(domain:developer.flipper.net)"
     ],
     "deny": [],
     "ask": []
