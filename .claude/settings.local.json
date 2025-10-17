@@ -15,10 +15,12 @@
       "Bash(convert:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(ufbt launch:*)",
+      "Bash(ufbt)"
     ],
     "deny": [],
     "ask": []
   },
-  "outputStyle": "Learning"
+  "outputStyle": "Explanatory"
 }
