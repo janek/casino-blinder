@@ -17,7 +17,8 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(ufbt launch:*)",
-      "Bash(ufbt)"
+      "Bash(ufbt)",
+      "Bash(make list-subghz:*)"
     ],
     "deny": [],
     "ask": []
