@@ -4,3 +4,10 @@ build/
 *.fap
 *.elf
 *.bin
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
