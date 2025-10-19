@@ -19,7 +19,10 @@
       "Bash(ufbt launch:*)",
       "Bash(ufbt)",
       "Bash(make list-subghz:*)",
-      "WebFetch(domain:developer.flipper.net)"
+      "WebFetch(domain:developer.flipper.net)",
+      "SlashCommand(/init)",
+      "Bash(uv run python3 -c \"from PIL import Image; img = Image.open(''images/casino.png''); print(f''Size: {img.size}, Mode: {img.mode}'')\")",
+      "Bash(uv pip install Pillow)"
     ],
     "deny": [],
     "ask": []
