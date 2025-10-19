@@ -34,7 +34,9 @@
       "Bash(open preview.html)",
       "Bash(uv run tools/generate_sweep_animation_down.py)",
       "Bash(uv run python3 -c \"\n# /// script\n# dependencies = [''pillow'']\n# ///\nimport os\nfrom PIL import Image\n\nframes_dir = ''images/animation_frames_down''\noutput_path = ''preview_animation_down.gif''\nfps = 30\n\nframe_files = sorted([\n    os.path.join(frames_dir, f)\n    for f in os.listdir(frames_dir)\n    if f.startswith(''frame_'') and f.endswith(''.png'')\n])\n\nframes = [Image.open(f).convert(''RGB'') for f in frame_files]\nduration_ms = int(1000 / fps)\n\nframes[0].save(\n    output_path,\n    save_all=True,\n    append_images=frames[1:],\n    duration=duration_ms,\n    loop=0,\n    optimize=True\n)\n\nprint(f''✓ Created {output_path}'')\n\")",
-      "Bash(uv run tools/create_preview_gif.py images/animation_frames_down preview_animation_down.gif)"
+      "Bash(uv run tools/create_preview_gif.py images/animation_frames_down preview_animation_down.gif)",
+      "Bash(claude auth --help)",
+      "Bash(cat ~/.config/claude/config.json)"
     ],
     "deny": [],
     "ask": []
