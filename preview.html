@@ -1,45 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Casino Blinder Animation Preview</title>
+    <title>Animation Preview</title>
     <style>
         body {
-            background: #1e1e1e;
+            background: #000;
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 80px;
             height: 100vh;
             margin: 0;
-            font-family: monospace;
-            color: #fff;
-            flex-direction: column;
-        }
-        .container {
-            text-align: center;
+            padding: 0;
         }
         img {
-            border: 4px solid #ff8c00;
-            box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
             image-rendering: pixelated;
-            transform: scale(4);
-            margin: 60px;
-        }
-        h1 {
-            color: #ff8c00;
-            margin-bottom: 10px;
-        }
-        .info {
-            color: #888;
-            font-size: 14px;
+            image-rendering: crisp-edges;
+            width: 512px;
+            height: 256px;
+            border: 2px solid #333;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎬 Casino Blinder Animation</h1>
-        <p class="info">100 frames @ 30 FPS | 128×64px | 3.3 seconds</p>
-        <img src="preview_animation.gif" alt="Casino Blinder Animation">
-        <p class="info">Sweep animation: Top → Center</p>
-    </div>
+    <img src="preview_animation.gif">
+    <img src="preview_animation_down.gif">
 </body>
 </html>
