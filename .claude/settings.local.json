@@ -30,7 +30,8 @@
       "Bash(open -a \"Safari\" preview_animation.gif)",
       "Bash(open -a \"Firefox\" preview_animation.gif)",
       "Bash(qlmanage -p preview_animation.gif)",
-      "Bash(/dev/null)"
+      "Bash(/dev/null)",
+      "Bash(open preview.html)"
     ],
     "deny": [],
     "ask": []
