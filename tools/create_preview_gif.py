@@ -55,7 +55,13 @@ def create_animated_gif(frames_dir, output_path, fps=30):
     print(f"  Size: {os.path.getsize(output_path) / 1024:.1f} KB")
 
 if __name__ == "__main__":
-    frames_directory = "images/animation_frames"
-    output_file = "preview_animation.gif"
+    import sys
+
+    if len(sys.argv) > 1:
+        frames_directory = sys.argv[1]
+        output_file = sys.argv[2] if len(sys.argv) > 2 else "preview.gif"
+    else:
+        frames_directory = "images/animation_frames"
+        output_file = "preview_animation.gif"
 
     create_animated_gif(frames_directory, output_file, fps=30)
