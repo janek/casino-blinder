@@ -147,9 +147,10 @@ def main():
         try:
             interval = int(sys.argv[2])
         except (IndexError, ValueError):
-            print("Invalid interval, using default 300s")
+            print("Invalid interval, using default 300 seconds")
 
-    print(f"Started (checking every {interval}s, Ctrl+C to stop)")
+    minutes = interval / 60
+    print(f"Started (checking every {minutes:.1f} minutes, Ctrl+C to stop)")
 
     try:
         while True:

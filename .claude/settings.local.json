@@ -42,7 +42,8 @@
       "Bash(uv run tools/convert_to_1bit.py)",
       "Bash(make build)",
       "Bash(make launch)",
-      "Bash(uv run tools/generate_through_animations.py)"
+      "Bash(uv run tools/generate_through_animations.py)",
+      "Bash(chmod +x tools/generate_through_animations.py)"
     ],
     "deny": [],
     "ask": []
