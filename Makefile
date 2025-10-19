@@ -1,4 +1,4 @@
-.PHONY: build clean launch install list-subghz help
+.PHONY: build clean launch install list-subghz preview help
 
 # Flipper device port (auto-detected)
 FLIPPER_PORT ?= /dev/tty.usbmodemflip_Akerir1
@@ -14,6 +14,7 @@ help:
 	@echo "  launch       - Build and launch on Flipper"
 	@echo "  install      - Build and install (without launching)"
 	@echo "  list-subghz  - List SubGHz files on Flipper SD card"
+	@echo "  preview      - Open animation preview in browser"
 	@echo "  help         - Show this help message"
 
 build:
@@ -35,3 +36,7 @@ install: build
 list-subghz:
 	@echo "📁 Listing SubGHz files on Flipper..."
 	@ufbt cli --port $(FLIPPER_PORT) --exec "storage list /ext/subghz" 2>&1 | grep -E '\.sub$$' || echo "❌ No .sub files found or Flipper not connected"
+
+preview:
+	@echo "🎬 Opening animation preview..."
+	@open preview.html
