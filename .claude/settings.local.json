@@ -39,7 +39,9 @@
       "Bash(cat ~/.config/claude/config.json)",
       "Bash(cat ~/Library/Application Support/Zed/settings.json)",
       "Bash(env)",
-      "Bash(uv run tools/convert_to_1bit.py)"
+      "Bash(uv run tools/convert_to_1bit.py)",
+      "Bash(make build)",
+      "Bash(make launch)"
     ],
     "deny": [],
     "ask": []
