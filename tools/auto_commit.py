@@ -123,19 +123,19 @@ def run_claude_commit_push() -> bool:
 
             return True
         else:
-            log(f"❌ Commit failed (code {result.returncode})", "ERROR")
+            log(f"Commit failed (code {result.returncode})", "ERROR")
             if result.stderr:
                 print(result.stderr)
             return False
 
     except subprocess.TimeoutExpired:
-        log("⏱️  Timed out after 2 minutes", "ERROR")
+        log("Timed out after 2 minutes", "ERROR")
         return False
     except FileNotFoundError:
-        log("❌ 'claude' CLI not found", "ERROR")
+        log("'claude' CLI not found", "ERROR")
         return False
     except Exception as e:
-        log(f"❌ Error: {e}", "ERROR")
+        log(f"Error: {e}", "ERROR")
         return False
 
 
@@ -147,9 +147,9 @@ def main():
         try:
             interval = int(sys.argv[2])
         except (IndexError, ValueError):
-            print("⚠️  Invalid interval, using default 300s")
+            print("Invalid interval, using default 300s")
 
-    print(f"🚀 Started (checking every {interval}s, Ctrl+C to stop)")
+    print(f"Started (checking every {interval}s, Ctrl+C to stop)")
 
     try:
         while True:
@@ -163,7 +163,7 @@ def main():
             time.sleep(interval)
 
     except KeyboardInterrupt:
-        print("\n👋 Stopped")
+        print("\nStopped")
         sys.exit(0)
 
 
