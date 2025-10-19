@@ -23,7 +23,14 @@
       "SlashCommand(/init)",
       "Bash(uv run python3 -c \"from PIL import Image; img = Image.open(''images/casino.png''); print(f''Size: {img.size}, Mode: {img.mode}'')\")",
       "Bash(uv pip install Pillow)",
-      "Bash(uv run tools/generate_sweep_animation.py)"
+      "Bash(uv run tools/generate_sweep_animation.py)",
+      "Bash(uv run tools/create_preview_gif.py)",
+      "Bash(open preview_animation.gif)",
+      "Bash(open -a \"Google Chrome\" preview_animation.gif)",
+      "Bash(open -a \"Safari\" preview_animation.gif)",
+      "Bash(open -a \"Firefox\" preview_animation.gif)",
+      "Bash(qlmanage -p preview_animation.gif)",
+      "Bash(/dev/null)"
     ],
     "deny": [],
     "ask": []
